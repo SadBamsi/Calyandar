@@ -1,0 +1,103 @@
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    box-sizing: content-box;
+}
+.week-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.calendar{
+    background-color: #287da8;
+    width: 360px;
+    height: 400px;
+    margin-left: 10px;
+    cursor: default;
+}
+.date-area {
+    padding: 10px;
+    text-align: center;
+}
+.date {
+    font-size: 16px;
+    font-family: comic-sans;
+    color:#d3dce8;
+}
+.date:hover {
+    opacity: .6;
+}
+.time-area {
+    text-align: center;
+}
+.time {
+    font-size: 30px;
+    color:#d3dce1;
+}
+.weeks-area {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.month-check {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.checked-month {
+    display: inline-block;
+    font-size: 20px;
+    color: #a6abb2;
+    width: 170px;
+    margin-right: 50px;
+}
+.month-date {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #5a7055;
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.month-date:hover {
+    opacity: .5;
+    box-sizing: border-box;
+}
+
+.button-next,
+.button-prev {
+    content: url(src/img/arrow.png);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+}
+.button-next:hover,
+.button-prev:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+.button-prev {
+    transform: rotate(-90deg);
+    margin-right: 20px;
+}
+.prev-date {
+    opacity: .4;
+}
+.today {
+    border-color: #b6cbd6;
+}
+.days-area { 
+    margin-bottom: 20px;
+}
+.selected-date-area {
+    padding-left: 10px;
+}
